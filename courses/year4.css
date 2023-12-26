@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Poppins;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #00B2FF;
+    --tertiary-color: black;
+}
+
+.container {
+    position: relative;
+}
+
+.container-1 {
+    background-image: url(../images/black-community-college-enrollment\ 1\ \(3\).png);
+    width: 100%;
+    height: 100vh;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    align-items: center;
+    padding: 0 0.1rem;
+    margin-top: 1rem;
+}
+
+.logo h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.0125rem;
+    color: var(--tertiary-color);
+}
+nav {
+    position: relative;
+    background: transparent;
+    border-radius: 2rem;
+    border: 1px solid var(--tertiary-color);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background-color: var(--tertiary-color);
+    width: 70px;
+    border-radius: 2rem;
+    transition: all .5s ease 0s;
+   
+}
+
+
+a:nth-child(1){
+    width: 70px;
+}
+
+nav .start-home,a:nth-child(1):hover~.animation {
+    width: 70px;
+    left: 0;
+    color: black;
+}
+a:nth-child(2){
+    width: 80px;
+}
+
+nav .start-about,a:nth-child(2):hover~.animation {
+    width: 80px;
+    left: 70px;
+    color: black;
+}
+a:nth-child(3){
+    width: 100px;
+}
+
+nav .start-courses,a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 160px;
+    color: black;
+}
+
+.circle img {
+    position: relative;
+    right: 15rem;
+    width: 45rem;
+    height: 1/1;
+    z-index: 1;
+    display: none;
+}
+
+#container-2 {
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.top h1,.bottom h1  {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.gst,.dept,.borrowed{
+    background-color: var(--primary-color);
+    color: black;
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.gst h2,.dept h2,.borrowed h2 {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.gst a button,.dept a button,.borrowed a button  {
+    width: 90%;
+    padding: 0.7rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+footer {
+    height: 90vh;
+    width: 100%;
+    background: black;
+    color: var(--primary-color);
+    padding: 0 2rem;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .flex {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 4rem;
+}
+
+.second img {
+    padding: 0 0.5rem;
+    margin-top: 2.5rem;
+}
+
+footer .name {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0.025rem;
+    padding-bottom: 0.5rem;
+}
+
+footer .contact {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem; /* 100% */
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+}
+
+.mail,.phone{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.mail img,.phone img {
+    padding-right: 0.5rem;
+}
+
+footer .copy {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+footer .copy {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 478px) {
+   
+}
+@media (min-width: 640px) {
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .container-2 {
+        color: black;
+        padding: 2rem;
+    }
+    
+}
+@media (min-width: 768px) {
+    .card {
+        background-color: var(--secondary-color);
+        border-radius: 1.5rem;
+        padding: 3rem;
+        color: var(--primary-color);
+        text-align: center;
+    }
+    
+    .top h1,.bottom h1  {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .card .first,.card .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .gst,.dept,.borrowed{
+        background-color: var(--primary-color);
+        color: black;
+        margin: 2rem auto;
+        height: auto;
+        gap: 0.5rem;
+        border-radius: 1.5rem;
+        text-align: center;
+        width: 33%;
+        padding: 2rem;
+        flex-shrink: 1;
+    }
+    
+    .gst h2,.dept h2,.borrowed h2 {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .gst a button,.dept a button,.borrowed a button  {
+        width: 90%;
+        padding: 0.7rem 0;
+        border-radius: 0.5rem;
+        border: 1px solid black;
+        background-color: var(--primary-color);
+        gap: 2rem;
+        text-align: center;
+        font-weight: 600;
+        margin: 2rem auto;
+    }
+
+
+   footer {
+    height: 60vh;
+    display: flex;
+}
+
+   footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.flex .first,.flex .second,.flex .third {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.second img {
+    padding: 0 0.5rem;
+    
+}
+footer .name {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0.025rem;
+    padding-bottom: 0.5rem;
+}
+
+footer .contact {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem; /* 100% */
+    letter-spacing: 0.03rem;
+    margin-top: 1rem;
+}
+
+.mail,.phone{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.mail img,.phone img {
+    padding-right: 0.5rem;
+}
+
+footer .copy {
+    text-align: center;
+    margin-top: -5rem;
+    font-size: 1.1rem;
+}
+
+}
+@media (min-width: 1024px) {
+    .container-1 {
+        background-image: url(../images/black-community-college-enrollment\ 1\ \(3\).png);
+        width: 100%;
+        height: 100vh;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: cover;
+        padding: 2rem;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 0.03rem;
+    }
+    
+    nav {
+        position: relative;
+        background: transparent;
+        border-radius: 2rem;
+        border: 1px solid var(--tertiary-color);
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    }
+    
+    nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        background-color: var(--tertiary-color);
+        width: 100px;
+        border-radius: 2rem;
+        transition: all .5s ease 0s;
+    }
+    
+    
+    a:nth-child(1){
+        width: 100px;
+    }
+    
+    nav .start-home,a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 0;
+        color: black;
+    }
+    a:nth-child(2){
+        width: 110px;
+    }
+    
+    nav .start-about,a:nth-child(2):hover~.animation {
+        width: 110px;
+        left: 100px;
+        color: black;
+    }
+    a:nth-child(3){
+        width: 130px;
+    }
+    
+    nav .start-courses,a:nth-child(3):hover~.animation {
+        width: 130px;
+        left: 220px;
+        color: black;
+    }
+    
+    
+    nav ul {
+        display: flex;
+        gap: 4rem;
+    }
+
+  
+
+
+    footer {
+        height: 50vh;
+        width: 100%;
+        background: black;
+        color: var(--primary-color);
+        padding: 1rem 2rem;
+        margin-top: 0;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .second img {
+        padding: 0 0.5rem;
+    }
+    footer .name {
+        font-size: 1.25rem;
+        font-weight: 900;
+        line-height: 120%;
+        letter-spacing: 0.025rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    footer .contact {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem; /* 100% */
+        letter-spacing: 0.03rem;
+    }
+    
+    .mail,.phone{
+        display: flex;
+        margin-top: 1rem;
+    }
+    
+    .mail img,.phone img {
+        padding-right: 0.5rem;
+    }
+    
+    footer .copy {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+}
+@media (min-width: 1280px) {
+   
+}
+@media (min-width: 1536px) {
+   
+}
