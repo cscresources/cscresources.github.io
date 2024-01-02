@@ -221,7 +221,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     width: 48%;
     border-radius: 8px;
     object-fit: cover;
-    aspect-ratio: 1/2;
+    height: 300px;
     filter: grayscale(100%);
 }
 
@@ -247,16 +247,17 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     text-align: center;
     margin-top: 3rem;
     padding: 0;
+    gap: 4rem;
 }
 
 .stats p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 
 .stats .number {
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .icons {
@@ -273,7 +274,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 }
 
 .icons p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 600;
 }
 
@@ -374,7 +375,12 @@ footer .contact {
 
 .mail,.phone{
     display: flex;
+    gap: 0.2rem;
     margin-top: 1rem;
+}
+
+.mail p, .phone p {
+    font-size: 0.8rem;
 }
 
 .mail img,.phone img {
@@ -514,6 +520,11 @@ footer .copy {
 
     .grid .left p {
         font-size: 1.2rem;
+    }
+
+    .grid .right img {
+        width: 48%;
+        height: 500px;
     }
 
     .stats {
