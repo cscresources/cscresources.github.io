@@ -118,16 +118,16 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 }
 
 .hero h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 1.3rem;
+    margin-top: 1.4rem;
 }
 
 .hero p {
     font-size: 0.9rem;
     font-weight: 400;
-    margin-top: 1.3rem;
-    line-height: 140%;
+    margin-top: 1.7rem;
+    line-height: 160%;
     width: 70%;
 }
 
@@ -142,6 +142,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 
 .circle-img img {
     border-radius: 50%;
+    width: 50px;
 }
 
 .circle-img img:nth-child(1) {
@@ -152,22 +153,22 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 .circle-img img:nth-child(2) {
     position: absolute;
     top: 0;
-    left: 3rem;
+    left: 2rem;
 }
 .circle-img img:nth-child(3) {
     position: absolute;
     top: 0;
-    left: 6rem;
+    left: 4rem;
 }
 .circle-img img:nth-child(4) {
     position: absolute;
     top: 0;
-    left: 9rem;
+    left: 6rem;
 }
 .circle-img img:nth-child(5) {
     position: absolute;
     top: 0;
-    left: 12rem;
+    left: 8rem;
 }
 
 .flex {
@@ -220,7 +221,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     width: 48%;
     border-radius: 8px;
     object-fit: cover;
-    height: 300px;
+    aspect-ratio: 1/2;
     filter: grayscale(100%);
 }
 
@@ -245,16 +246,17 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     align-items: center;
     text-align: center;
     margin-top: 3rem;
+    padding: 0;
 }
 
 .stats p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
 .stats .number {
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .icons {
@@ -271,7 +273,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 }
 
 .icons p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -377,6 +379,7 @@ footer .contact {
 
 .mail img,.phone img {
     padding-right: 0.5rem;
+    width: 30px;
 }
 
 footer .copy {
@@ -417,7 +420,125 @@ footer .copy {
     
 }
 @media (min-width: 768px) {
-  
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+
+    a:nth-child(1){
+        width: 70px;
+    }
+    
+    nav .start-home,a:nth-child(1):hover~.animation {
+        width: 70px;
+        left: 0;
+        color: black;
+    }
+    a:nth-child(2){
+        width: 80px;
+    }
+    
+    nav .start-about,a:nth-child(2):hover~.animation {
+        width: 80px;
+        left: 80px;
+        color: black;
+    }
+    a:nth-child(3){
+        width: 100px;
+    }
+    
+    nav .start-courses,a:nth-child(3):hover~.animation {
+        width: 100px;
+        left: 160px;
+        color: black;
+    }
+    
+    .hero {
+        margin-top: 6rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 0.03rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 1.4rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 1.7rem;
+        line-height: 160%;
+        width: 70%;
+    }
+
+    .circle-img img {
+        border-radius: 50%;
+        width: auto;
+    }
+    
+    .circle-img img:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .circle-img img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 3rem;
+    }
+    .circle-img img:nth-child(3) {
+        position: absolute;
+        top: 0;
+        left: 6rem;
+    }
+    .circle-img img:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 9rem;
+    }
+    .circle-img img:nth-child(5) {
+        position: absolute;
+        top: 0;
+        left: 12rem;
+    }
+
+    .grid .left p {
+        font-size: 1.2rem;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        padding: 0;
+    }
+    
+    .stats p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .stats .number {
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+    
+    .icons p {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 
    .years {
      display: grid;
