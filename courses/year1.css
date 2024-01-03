@@ -125,7 +125,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 .card {
     background-color: var(--secondary-color);
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     color: var(--primary-color);
     text-align: center;
 }
