@@ -46,16 +46,15 @@ html {
     justify-content: space-between;
     height: 20px;
     align-items: center;
-    padding: 0 0.1rem;
     margin-top: 1rem;
 }
 
 .logo h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.0125rem;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 nav {
     position: relative;
@@ -74,7 +73,7 @@ nav a {
     display: inline-block;
     text-align: center;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 nav .animation {
@@ -83,38 +82,37 @@ nav .animation {
     top: 0;
     z-index: 0;
     background-color: var(--secondary-color);
-    width: 70px;
+    width: 10px;
     border-radius: 2rem;
     transition: all .5s ease 0s;
-   
 }
 
 
 a:nth-child(1){
-    width: 70px;
+    width: 50px;
 }
 
 nav .start-home,a:nth-child(1):hover~.animation {
-    width: 70px;
+    width: 50px;
     left: 0;
     color: black;
 }
 a:nth-child(2){
-    width: 80px;
+    width: 60px;
 }
 
 nav .start-about,a:nth-child(2):hover~.animation {
-    width: 80px;
-    left: 70px;
+    width: 60px;
+    left: 54px;
     color: black;
 }
 a:nth-child(3){
-    width: 100px;
+    width: 80px;
 }
 
 nav .start-courses,a:nth-child(3):hover~.animation {
-    width: 100px;
-    left: 160px;
+    width: 80px;
+    left: 120px;
     color: black;
 }
 
@@ -141,7 +139,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     background-color: var(--primary-color);
     color: black;
     width: 80%;
-    height: auto;
+    height: 350px;
     margin: 2rem auto;
     padding: 2rem;
     gap: 1rem;
@@ -150,8 +148,8 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 }
 
 .gst h2,.dept h2,.borrowed h2 {
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-size: 1rem;
 }
 
 .gst a button,.dept a button,.borrowed a button  {
@@ -169,6 +167,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     font-weight: 600;
     margin: 2rem auto;
     cursor: pointer;
+    font-size: 0.7rem;
 }
 
 footer {
@@ -212,11 +211,17 @@ footer .contact {
 
 .mail,.phone{
     display: flex;
+    gap: 0.2rem;
     margin-top: 1rem;
+}
+
+.mail p, .phone p {
+    font-size: 0.8rem;
 }
 
 .mail img,.phone img {
     padding-right: 0.5rem;
+    width: 30px;
 }
 
 footer .copy {
