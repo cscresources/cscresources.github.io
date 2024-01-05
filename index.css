@@ -23,7 +23,7 @@ html {
 .container-1 {
     background-image: url(images/home\ bg-image.jpg);
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 
 .flex {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .circle-img {
@@ -233,11 +233,17 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     margin-top: 3rem;
     color: var(--primary-color);
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .left button a {
     color: var(--primary-color);
     font-size: 1rem;
+}
+
+.left button:hover {
+    background-color: black;
+    transform: scale(0.98);
 }
 
 .stats {
@@ -426,6 +432,18 @@ footer .copy {
     
 }
 @media (min-width: 768px) {
+
+    .container-1 {
+        background-image: url(images/home\ bg-image.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        color: var(--primary-color);
+    }
+
     .logo h1 {
         font-size: 1.5rem;
     }
@@ -485,6 +503,11 @@ footer .copy {
         margin-top: 1.7rem;
         line-height: 160%;
         width: 70%;
+    }
+
+    .flex {
+        display: flex;
+        margin-top: 6rem;
     }
 
     .circle-img img {
@@ -612,7 +635,7 @@ footer .copy {
     aspect-ratio: 16/9;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: -6rem;
+    margin-top: -5rem;
     background-color: #fff;
     color: black;
     display: block;
@@ -876,7 +899,7 @@ footer .copy {
     
     .flex {
         display: flex;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
     
     .circle-img {
@@ -1047,7 +1070,7 @@ footer .copy {
         margin-top: 0;
     }
     
-    .flex {
+    footer .flex {
         display: flex;
         justify-content: space-between;
         align-items: start;
@@ -1085,15 +1108,32 @@ footer .copy {
         text-align: center;
         margin-top: 2rem;
     }
-    
-}
-@media (min-width: 1280px) {
+
     .slider {
         width: 350px;
         aspect-ratio: 16/9;
         border-radius: 10px;
         overflow: hidden;
-        margin-top: -6rem;
+        margin-top: -5rem;
+        background-color: #fff;
+        color: black;
+        display: block;
+    }
+    
+}
+@media (min-width: 1280px) {
+
+    .flex {
+        display: flex;
+        margin-top:-4rem;
+    }
+
+    .slider {
+        width: 350px;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 2rem 0;
         background-color: #fff;
         color: black;
         display: block;
@@ -1101,7 +1141,16 @@ footer .copy {
    
 }
 @media (min-width: 1536px) {
-   
+    .slider {
+        width: 350px;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -5rem;
+        background-color: #fff;
+        color: black;
+        display: block;
+    }
 }
 
 

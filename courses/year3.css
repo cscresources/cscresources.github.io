@@ -7,14 +7,23 @@
     list-style: none;
 }
 
+.circle img {
+    position: relative;
+    right: 15rem;
+    width: 45rem;
+    height: 1/1;
+    z-index: 1;
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 :root {
     --primary-color: #fff;
-    --secondary-color:  #EA6200;
-    --tertiary-color: black;
+    --secondary-color: black;
+    --tertiary-color: rgb(163, 3, 110);
 }
 
 .container {
@@ -25,7 +34,7 @@ html {
     background-image: url(../images/black-community-college-enrollment\ 1\ \(2\).png);
     width: 100%;
     height: 100vh;
-    background-position-x: center;
+    background-position-x: right;
     background-position-y: top;
     background-size: cover;
     backface-visibility: hidden;
@@ -38,22 +47,21 @@ html {
     justify-content: space-between;
     height: 20px;
     align-items: center;
-    padding: 0 0.1rem;
     margin-top: 1rem;
 }
 
 .logo h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.0125rem;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 nav {
     position: relative;
     background: transparent;
     border-radius: 2rem;
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
 
@@ -66,7 +74,7 @@ nav a {
     display: inline-block;
     text-align: center;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 nav .animation {
@@ -74,59 +82,51 @@ nav .animation {
     height: 100%;
     top: 0;
     z-index: 0;
-    background-color: var(--tertiary-color);
-    width: 70px;
+    background-color: var(--secondary-color);
+    width: 10px;
     border-radius: 2rem;
     transition: all .5s ease 0s;
-   
 }
 
 
 a:nth-child(1){
-    width: 70px;
+    width: 50px;
 }
 
 nav .start-home,a:nth-child(1):hover~.animation {
-    width: 70px;
+    width: 50px;
     left: 0;
     color: black;
 }
 a:nth-child(2){
-    width: 80px;
+    width: 60px;
 }
 
 nav .start-about,a:nth-child(2):hover~.animation {
-    width: 80px;
-    left: 70px;
+    width: 60px;
+    left: 54px;
     color: black;
 }
 a:nth-child(3){
-    width: 100px;
+    width: 80px;
 }
 
 nav .start-courses,a:nth-child(3):hover~.animation {
-    width: 100px;
-    left: 160px;
+    width: 80px;
+    left: 120px;
     color: black;
 }
 
-.circle img {
-    position: relative;
-    right: 15rem;
-    width: 45rem;
-    height: 1/1;
-    z-index: 1;
-    display: none;
-}
+
 
 #container-2 {
     padding: 2rem;
 }
 
 .card {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     color: var(--primary-color);
     text-align: center;
 }
@@ -140,7 +140,7 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     background-color: var(--primary-color);
     color: black;
     width: 80%;
-    height: auto;
+    height: 350px;
     margin: 2rem auto;
     padding: 2rem;
     gap: 1rem;
@@ -149,8 +149,9 @@ nav .start-courses,a:nth-child(3):hover~.animation {
 }
 
 .gst h2,.dept h2,.borrowed h2 {
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
 }
 
 .gst a button,.dept a button,.borrowed a button  {
@@ -163,12 +164,19 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     justify-content: center;
     align-items: center;
     align-self: center;
-    gap: 2rem;
     text-align: center;
     font-weight: 600;
-    margin: 2rem auto;
+    margin: 1rem auto;
     cursor: pointer;
+    font-size: 0.7rem;
+    transition: all 0.5s ease;
 }
+
+.card button:hover {
+    transform: scale(0.98);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+} 
 
 footer {
     height: 90vh;
@@ -211,11 +219,17 @@ footer .contact {
 
 .mail,.phone{
     display: flex;
+    gap: 0.2rem;
     margin-top: 1rem;
+}
+
+.mail p, .phone p {
+    font-size: 0.8rem;
 }
 
 .mail img,.phone img {
     padding-right: 0.5rem;
+    width: 30px;
 }
 
 footer .copy {
@@ -233,7 +247,7 @@ footer .copy {
     font-size: 1.1rem;
 }
 
-@media (min-width: 478px) {
+@media (min-width: 300px) {
    
 }
 @media (min-width: 640px) {
@@ -249,8 +263,45 @@ footer .copy {
     
 }
 @media (min-width: 768px) {
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+
+    a:nth-child(1){
+        width: 70px;
+    }
+    
+    nav .start-home,a:nth-child(1):hover~.animation {
+        width: 70px;
+        left: 0;
+        color: black;
+    }
+    a:nth-child(2){
+        width: 80px;
+    }
+    
+    nav .start-about,a:nth-child(2):hover~.animation {
+        width: 80px;
+        left: 80px;
+        color: black;
+    }
+    a:nth-child(3){
+        width: 100px;
+    }
+    
+    nav .start-courses,a:nth-child(3):hover~.animation {
+        width: 100px;
+        left: 160px;
+        color: black;
+    }
     .card {
-        background-color: var(--secondary-color);
+        background-color: var(--tertiary-color);
         border-radius: 1.5rem;
         padding: 3rem;
         color: var(--primary-color);
@@ -344,6 +395,10 @@ footer .contact {
     margin-top: 1rem;
 }
 
+.mail p, .phone p {
+    font-size: 1rem;
+}
+
 .mail img,.phone img {
     padding-right: 0.5rem;
 }
@@ -360,7 +415,7 @@ footer .copy {
         background-image: url(../images/black-community-college-enrollment\ 1\ \(2\).png);
         width: 100%;
         height: 100vh;
-        background-position-x: center;
+        background-position-x: right;
         background-position-y: top;
         background-size: cover;
         padding: 2rem;
@@ -386,7 +441,7 @@ footer .copy {
         position: relative;
         background: transparent;
         border-radius: 2rem;
-        border: 1px solid var(--tertiary-color);
+        border: 1px solid var(--secondary-color);
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
     }
     
@@ -406,7 +461,7 @@ footer .copy {
         height: 100%;
         top: 0;
         z-index: 0;
-        background-color: var(--tertiary-color);
+        background-color: var(--secondary-color);
         width: 100px;
         border-radius: 2rem;
         transition: all .5s ease 0s;

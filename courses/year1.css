@@ -168,7 +168,14 @@ nav .start-courses,a:nth-child(3):hover~.animation {
     margin: 1rem auto;
     cursor: pointer;
     font-size: 0.7rem;
+    transition: all 0.5s ease;
 }
+
+.card button:hover {
+    transform: scale(0.98);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+} 
 
 footer {
     height: 90vh;
@@ -239,7 +246,7 @@ footer .copy {
     font-size: 1.1rem;
 }
 
-@media (min-width: 478px) {
+@media (min-width: 300px) {
    
 }
 @media (min-width: 640px) {
