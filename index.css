@@ -871,7 +871,7 @@ footer .copy {
     }
     
     .hero {
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     
     .hero h1 {
@@ -899,11 +899,12 @@ footer .copy {
     
     .flex {
         display: flex;
-        margin-top: 4rem;
+        margin-top: 0;
     }
     
     .circle-img {
         position: relative;
+        margin-top: 2rem;
     }
     
     .circle-img img {
@@ -943,7 +944,7 @@ footer .copy {
         line-height: 120%;
         color: var(--primary-color);
         letter-spacing: 0.02rem;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
     
     .container-2 {
@@ -1125,7 +1126,7 @@ footer .copy {
 
     .flex {
         display: flex;
-        margin-top:-4rem;
+        margin-top: -10rem;
     }
 
     .slider {
